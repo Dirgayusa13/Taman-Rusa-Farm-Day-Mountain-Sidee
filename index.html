@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Taman Rusa Farm Day Mountain Side</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-textured">
+
+    <nav class="navbar" role="navigation" aria-label="Navigasi utama">
+        <div class="navbar-container">
+            <a href="#beranda" class="navbar-brand">Farm Day <span class="brand-sub">Mountain Side</span></a>
+            <div class="navbar-menu">
+                <a class="nav-link font-bold" href="#beranda">Beranda</a>
+                <a class="nav-link font-semibold" href="#harga">Daftar Harga</a>
+                <a class="nav-link font-semibold" href="#galeri">Galeri Foto</a>
+                <a class="nav-link font-semibold" href="#lokasi">Lokasi</a>
+                <a class="nav-link font-semibold" href="#kontak">Kontak</a>
+            </div>
+            <button class="navbar-toggle" id="navToggle" aria-label="Toggle menu">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        <div class="navbar-menu-mobile" id="mobileMenu" role="menu">
+            <a class="nav-link font-bold" href="#beranda">Beranda</a>
+            <a class="nav-link font-semibold" href="#galeri">Galeri Foto</a>
+            <a class="nav-link font-semibold" href="#harga">Daftar Harga</a>
+            <a class="nav-link font-semibold" href="#lokasi">Lokasi</a>
+            <a class="nav-link font-semibold" href="#kontak">Kontak</a>
+        </div>
+    </nav>
+
+    <section class="hero-section" id="beranda">
+        <div class="hero-bg-container">
+            <div class="hero-parallax" style="background-image: url('Background.jpeg');"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <span class="tag-badge">Wisata Rekreasi Alam</span>
+            <h1 class="hero-title">
+                <span class="hero-subtitle">Farm Day</span>
+                <span class="hero-headline typewriter-cursor" id="typewriterHeadline"></span>
+            </h1>
+            <p class="hero-description" style="opacity:1 !important;">
+                Nikmati pengalaman wisata keluarga yang tak terlupakan di lereng gunung Kemiling. 
+                Berinteraksi langsung dengan kawanan rusa ramah, hirup udara segar yang asri, 
+                dan ciptakan momen hangat bersama orang tersayang.
+            </p>
+            <div class="btn-container">
+                <button class="btn-premium btn-primary" id="exploreBtn">Jelajahi Wisata</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="reveal gallery-section" id="galeri">
+        <div class="section-inner-container">
+            <div class="gallery-header">
+                <div class="gallery-title-area">
+                    <h2 class="section-title">Galeri Foto</h2>
+                    <p class="section-subtitle">Rasakan kedekatan murni dengan alam melalui berbagai aktivitas interaktif yang dirancang untuk seluruh anggota keluarga.</p>
+                </div>
+                <div class="gallery-nav-buttons">
+                    <button class="btn-nav btn-prev" id="prevBtn" aria-label="Sebelumnya">
+                        <span class="material-symbols-outlined">arrow_back</span>
+                    </button>
+                    <button class="btn-nav btn-next" id="nextBtn" aria-label="Selanjutnya">
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-carousel-wrapper">
+            <div class="gallery-carousel hide-scrollbar" id="galleryContainer">
+                <div class="gallery-card">
+                    <div class="card-bg" style="background-image: url('Spot1.jpeg');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <p class="card-title">Spot 1</p>
+                        <p class="card-desc">Melihat lihat rusa</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="card-bg" style="background-image: url('Spot4.jpeg');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <p class="card-title">Spot 2</p>
+                        <p class="card-desc">Momen Memberi Makan Rusa</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="card-bg" style="background-image: url('Spot2.jpeg');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <p class="card-title">Spot 3</p>
+                        <p class="card-desc">Ngopi santai di alam yang indah</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="card-bg" style="background-image: url('Spot10.jpeg');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <p class="card-title">Spot 4</p>
+                        <p class="card-desc">Berbagai Macam Souvenir</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="card-bg" style="background-image: url('Spot6.jpeg');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <p class="card-title">Spot 5</p>
+                        <p class="card-desc">Beberapa Pilihan Menu</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="card-bg" style="background-image: url('Spot3.jpeg');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <p class="card-title">Spot 6</p>
+                        <p class="card-desc">Pemandangan Asri</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="card-bg" style="background-image: url('Spot8.jpeg');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <p class="card-title">Spot 7</p>
+                        <p class="card-desc">Tempat Bersantai</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="card-bg" style="background-image: url('Spot5.jpeg');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <p class="card-title">Spot 8</p>
+                        <p class="card-desc">Tempat Bermain</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="card-bg" style="background-image: url('Spot7.jpeg');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <p class="card-title">Spot 9</p>
+                        <p class="card-desc">Tempat Parkir</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reveal ticket-section" id="harga">
+        <div class="section-inner-container">
+            <div class="ticket-header">
+                <div class="text-center">
+  <h1>Harga Tiket</h1>
+  <p class="max-w-2xl mx-auto">
+    kami menyederhanakan akses Anda untuk kemudahan ke alam dengan satu tarif flat yang terjangkau untuk semua hari kunjungan.
+                <div class="ticket-card">
+                    <div class="decor-circle circle-top"></div>
+                    <div class="decor-circle circle-bottom"></div>
+                    <div class="ticket-content">
+                        <h3 class="ticket-type">Tiket Masuk</h3>
+                        <p class="ticket-validity">Berlaku untuk Weekday, Weekend &amp; Hari Libur</p>
+                        <div class="ticket-price-area">
+                            <span class="currency">Rp</span>
+                            <span class="price-number">15.000</span>
+                            <span class="price-unit">/org</span>
+                        </div>
+                        <div class="ticket-notes">
+                            <p class="note-included">Harga sudah termasuk akses ke seluruh area wisata dan penangkaran rusa.</p>
+                            <p class="note-excluded">Belum termasuk pakan/makanan rusa (bisa dibeli terpisah di lokasi).</p>
+                        </div>
+                        <button class="btn-premium btn-primary" id="addToCartBtn" style="margin-top: 32px; width: 100%;">
+                            <span class="material-symbols-outlined" style="font-size: 20px;">add_shopping_cart</span>
+                            Tambah ke Keranjang
+                        </button>
+                        <button class="btn-premium btn-secondary" id="viewCartBtn" style="margin-top: 12px; width: 100%; display: none;">
+                            <span class="material-symbols-outlined" style="font-size: 20px;">shopping_cart</span>
+                            Lihat Keranjang (<span id="cartCount">0</span>)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="cartModal">
+        <div class="modal-content modal-cart">
+            <button class="modal-close" id="cartModalClose">&times;</button>
+            <h2 class="modal-title">🛒 Keranjang Belanja</h2>
+            <p class="modal-sub">Tinjau pesanan Anda sebelum melakukan pembayaran</p>
+
+            <div class="modal-body" id="cartBody">
+                <div id="cartItems" style="margin-bottom: 16px;"></div>
+
+                <!-- Opsi Pembayaran -->
+                <div class="modal-payment">
+                    <label class="payment-label">Metode Pembayaran</label>
+                    <div class="payment-options">
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethodCart" value="QRIS" checked />
+                            <img src="Qris.png" alt="Qris Icon" width="32" height="32">
+                            <span class="payment-name">QRIS</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="qrisDisplay" style="display: none; text-align: center; padding: 16px 0; background: #f8f9fa; border-radius: 16px; margin-top: 8px; border: 1px solid #e0e0e0;">
+                    <p style="font-weight: 700; color: #154212; margin-bottom: 12px;">Scan QRIS untuk Pembayaran</p>
+                    <img id="qrisImage" src="" alt="QRIS" style="width: 200px; height: 200px; border-radius: 12px; border: 3px solid #154212; background: white; padding: 8px; box-sizing: border-box; object-fit: contain;">
+                    <p style="font-size: 0.9rem; color: #333; margin-top: 12px; font-weight: 600;">Total: <span id="qrisTotal">Rp 0</span></p>
+                    <p style="font-size: 0.75rem; color: #888;">Gunakan aplikasi pembayaran untuk scan QRIS</p>
+                </div>
+
+                <div class="modal-total">
+                    <span>Total</span>
+                    <strong id="cartTotal">Rp 0</strong>
+                </div>
+
+                <button class="btn-premium btn-primary" id="confirmCartBtn" style="width: 100%; margin-top: 16px;">
+                    Konfirmasi Pembelian
+                </button>
+                <button class="btn-premium" id="clearCartBtn" style="width: 100%; margin-top: 8px; background: #e74c3c; color: white; border: none;">
+                    Kosongkan Keranjang
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content success-modal">
+            <button class="modal-close" id="successModalClose">&times;</button>
+            <div style="text-align: center;">
+                <div style="font-size: 4rem; margin-bottom: 4px;">✅</div>
+                <h2 class="modal-title" style="margin: 0 0 4px 0;">Pembelian Berhasil!</h2>
+                <p class="modal-sub" style="margin: 0 0 16px 0;">Terima kasih telah memesan tiket Farm Day Mountain Side.</p>
+            </div>
+            <div id="ticketContainer" style="margin: 0 auto 16px auto; text-align: center; max-width: 400px;">
+                <canvas id="ticketCanvas" style="width: 100%; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); background: white;"></canvas>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <button class="btn-premium btn-primary" id="downloadTicketBtn" style="width: 100%;">
+                    <span class="material-symbols-outlined" style="font-size: 20px;">download</span>
+                    Unduh Tiket (PNG)
+                </button>
+                <button class="btn-premium" id="successCloseBtn" style="width: 100%; background: #e8e8e8; color: #333; border: none;">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="reveal location-section" id="lokasi">
+        <div class="location-banner">
+            <div class="location-info-side">
+                <h2 class="banner-title">Lokasi Wisata</h2>
+                <p class="banner-desc">Terletak di dataran tinggi yang sejuk, lokasi kami dapat dijangkau dengan mudah menggunakan kendaraan pribadi maupun rombongan bus.</p>
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="info-icon-box">
+                            <span class="material-symbols-outlined">location_on</span>
+                        </div>
+                        <div class="info-text-box">
+                            <h4>Alamat Lengkap</h4>
+                            <p>Jl. Wan Abdurrahman, Sumber Agung, Kec. Kemiling, Kabupaten Pesawaran, Lampung 35156</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon-box">
+                            <span class="material-symbols-outlined">distance</span>
+                        </div>
+                        <div class="info-text-box">
+                            <h4>Estimasi Perjalanan</h4>
+                            <p>Berkisar 12-15 km dari Pusat Kota Bandar Lampung (Estimasi 30-40 menit berkendara).</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://maps.app.goo.gl/J8bGFdoCtC2jK2sf6" target="_blank" rel="noopener noreferrer" class="btn-location">
+                    <span class="material-symbols-outlined">map</span>
+                    Navigasi Google Maps
+                </a>
+            </div>
+            <div class="location-map-side">
+                <div class="map-bg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAyYnm6Ee1M49pdaiBdke79cDZm0TyleRlRrFex3uWV2fm7SMVfJzfaFAxXZs7JRl8Tuz6yveIYisPNdv0iyBJ98BQWCG_H7p2wZwJJ3n4-JUWRhu_69Rk77iMhm02wz9PE0bIBrcx3ft7OPOigrvHMfDypDq4Ufyj8qj-2Bv_1zY6ZYSwO2lZ073-lVruhIbpfIP8aLqiJpGnvXi1CAZQGOwr71SyoydIEGutm5Vep452C5UfjuidRdRWks1lZRSGYd4ec6yQdTzE0vzc");'></div>
+                <div class="map-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section" id="kontak">
+        <div class="footer-bg-container">
+            <img alt="Scenic Mountain Landscape" class="footer-bg-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbK461Va9tTgfKMKSX-BPzeaDrvAZ4aE_bOZUwV6GJJO-_ku6Sfcm1ziav4cJ3wy-9VSmiayadMR9JOyfmzx4EmmOH0ZrwLrLpPkmXoObpiY-_Q2EtSF0nWJjFGM5K2pO-j2SwCkTus5dGUjP3m4WekflLsO4J6gtlPV8R-0Ty4r56k07tl2Olg8s63FH5sFN1WbKepSsq2zdDj2zUxa963LXC8--Dfj_6qtsQekFW9nVRspTIfqwyI9FUA1iqnNvrUhkmukBp8NFlOZU" loading="lazy" />
+            <div class="footer-overlay-blend"></div>
+            <div class="footer-overlay-gradient"></div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand-area">
+                    <div class="footer-logo">
+                        <span class="footer-logo-cursive">Farm Day</span>
+                        <span class="footer-logo-bold">Mountain Side</span>
+                    </div>
+                    <p class="footer-brand-desc">Destinasi wisata keluarga yang memadukan keindahan alam pegunungan dengan konservasi rusa interaktif di jantung Pesawaran.</p>
+                </div>
+                <div class="footer-links-area">
+                    <div class="footer-link-col">
+                        <h4>Jam Operasional</h4>
+                        <p class="ops-hours">Senin - Jumat<br /><span class="ops-time">09:00 - 17:00</span></p>
+                        <p class="ops-hours">Sabtu - Minggu<br /><span class="ops-time">09:00 - 18:00</span></p>
+                    </div>
+                    <div class="footer-link-col">
+                        <h4>Informasi</h4>
+                        <a href="#beranda">Beranda</a>
+                        <a href="#galeri">Galeri Foto</a>
+                        <a href="#harga">Daftar Harga</a>
+                        <a href="#lokasi">Lokasi</a>
+                    </div>
+                    <div class="footer-link-col span-mobile-2">
+                        <h4>Hubungi Kami</h4>
+                        <div class="contact-links">
+                            <a href="https://www.instagram.com/farmday.mountainside" target="_blank" rel="noopener noreferrer">
+                                <span class="material-symbols-outlined">photo_camera</span>
+                                <span>@farmday.mountainside</span>
+                            </a>
+                            <a href="https://wa.me/6282182777767" target="_blank" rel="noopener noreferrer">
+                                <span class="material-symbols-outlined">chat</span>
+                                <span>+62 821-8277-7767</span>
+                            </a>
+                            <a href="https://maps.app.goo.gl/J8bGFdoCtC2jK2sf6" target="_blank" rel="noopener noreferrer">
+                                <span class="material-symbols-outlined">map</span>
+                                <span>Google Maps</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Taman Rusa Farm Day Mountain Side.</p>
+                <p>Built with Nature in Mind</p>
+            </div>
+        </div>
+    </footer>
+
+    <section class="reveal contact-section" id="formulir">
+        <div class="section-inner-container">
+            <div class="contact-header">
+                <h2 class="section-title text-center">Hubungi Pihak Desa</h2>
+                    <p class="section-subtitle text-center mx-auto max-w-2xl">Kirimkan pertanyaan atau masukan Anda kepada kami.</p>
+            </div>
+            
+            <div class="contact-card">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="contactName" class="form-label">Nama Lengkap</label>
+                        <input type="text" id="contactName" class="form-control" placeholder="Masukkan nama Anda">
+                        <small id="nameError" class="form-error">Kolom nama tidak boleh kosong.</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactEmail" class="form-label">Alamat Email</label>
+                        <input type="text" id="contactEmail" class="form-control" placeholder="contoh: user@email.com">
+                        <small id="emailError" class="form-error">Email tidak valid. Harus mengandung karakter '@' dan titik (.).</small>
+                    </div>
+                    
+                    <div class="form-group form-group-msg">
+                        <label for="contactMessage" class="form-label">Pesan / Pertanyaan</label>
+                        <textarea id="contactMessage" class="form-control form-textarea" rows="5" placeholder="Tulis pesan Anda di sini..."></textarea>
+                        <small id="msgError" class="form-error">Pesan tidak boleh kosong.</small>
+                    </div>
+                    
+                    <button type="submit" class="btn-premium btn-primary btn-block">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <button id="backToTopBtn" class="back-to-top" aria-label="Kembali ke atas">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
